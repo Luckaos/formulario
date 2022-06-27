@@ -17,7 +17,25 @@
             
             <div id="principal">
                 <form action="#">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome">
                     
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="idade">Idade</label>
+                    <input type="number" name="idade" id="idade" min="8" max="127">
+
+                    <label for="ocupacao">Qual opção melhor descreve sua ocupação atual?</label>
+                    <select id="ocupacao" name="ocupacao" placeholder="Escolha uma ocupação">
+                        <option value="estudante">Estudante</option>
+                        <option value="trabalhoIntegral">Trabalhando em tempo Integral</option>
+                        <option value="trabalhoMeio">Trabalhando meio período</option>
+                        <option value="naoInformar">Prefiro não informar</option>
+                        <option value="outro">Outro</option>
+                    </select>
+
+                    <input type="submit" value="Submit" id="enviar">
                 </form>
             </div>
 
