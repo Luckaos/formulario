@@ -28,12 +28,53 @@
 
                     <label for="ocupacao">Qual opção melhor descreve sua ocupação atual?</label>
                     <select id="ocupacao" name="ocupacao" placeholder="Escolha uma ocupação">
+                        <option disabled selected value>Selecione uma opção.</option>
                         <option value="estudante">Estudante</option>
                         <option value="trabalhoIntegral">Trabalhando em tempo Integral</option>
                         <option value="trabalhoMeio">Trabalhando meio período</option>
                         <option value="naoInformar">Prefiro não informar</option>
                         <option value="outro">Outro</option>
                     </select>
+
+                    <label for="recomendar">Você me recomendaria como desenvolvedor Front-End?</label>
+                    <label><input type="radio" name="recomendar" class="radio-recomendar" value="Certamente" checked>Certamente!</label>
+                    <label><input type="radio" name="recomendar" class="radio-recomendar" value="Talvez">Talvez</label>
+                    <label><input type="radio" name="recomendar" class="radio-recomendar" value="Nunca">Nunca</label>
+
+                    <div id="checkboxes">
+                        <p>Quais áreas de conhecimendo você deseja aprender mais?</p>
+                        <label>
+                            <input type="checkbox" name="interesse" class="check-interesse" value="Logica">Lógica de Programação
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interesse" class="check-interesse" value="Front-End">Front-End
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interesse" class="check-interesse" value="Back-End">Back-End
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interesse" class="check-interesse" value="Banco-Dados">Banco de Dados
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interesse" class="check-interesse" value="IA">Inteligência Artificial
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interesse" class="check-interesse" value="Servidores">Servidores
+                        </label>
+                    </div>
+
+                    <div id="comentario">
+                        <p>Algum comentário ou sugestão?</p>
+                        <textarea name="comentario" id="textarea-coment" placeholder="Escreva seu comentário ou sugestão aqui..."></textarea>
+                    </div>
+
+                    <div class="minhaNota">
+                        <label>
+                            Dê uma nota de 0 a 5 para este projeto!
+                            <input type="range" id="nota" name="vol" min="0" max="5" value="5" oninput="display.value=value" onchange="display.value=value">
+                            <input type="text" id="display" value="5" readonly>
+                        </label>
+                    </div>
 
                     <input type="submit" value="Submit" id="enviar">
                 </form>
