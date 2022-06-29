@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="main">
-        <div id="content">
+        <div class="container">
             <header>
                 <h1>Formuário do Lucas</h1>
                 <p>Obrigado por dedicar seu tempo para dar uma olhada neste projeto.</p>
@@ -18,16 +18,16 @@
             <div id="principal">
                 <form action="#">
                     <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome">
+                    <input type="text" name="nome" id="nome" class="form-onfocus">
                     
                     <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" class="form-onfocus">
 
                     <label for="idade">Idade</label>
-                    <input type="number" name="idade" id="idade" min="8" max="127">
+                    <input type="number" name="idade" id="idade" class="form-onfocus" min="8" max="127">
 
                     <label for="ocupacao">Qual opção melhor descreve sua ocupação atual?</label>
-                    <select id="ocupacao" name="ocupacao" placeholder="Escolha uma ocupação">
+                    <select id="ocupacao" class="form-onfocus" name="ocupacao" placeholder="Escolha uma ocupação">
                         <option disabled selected value>Selecione uma opção.</option>
                         <option value="estudante">Estudante</option>
                         <option value="trabalhoIntegral">Trabalhando em tempo Integral</option>
@@ -65,7 +65,7 @@
 
                     <div id="comentario">
                         <p>Algum comentário ou sugestão?</p>
-                        <textarea name="comentario" id="textarea-coment" placeholder="Escreva seu comentário ou sugestão aqui..."></textarea>
+                        <textarea name="comentario" id="textarea-coment" class="form-onfocus" placeholder="Escreva seu comentário ou sugestão aqui..."></textarea>
                     </div>
 
                     <div class="minhaNota">
@@ -76,7 +76,7 @@
                         </label>
                     </div>
 
-                    <input type="submit" value="Submit" id="enviar">
+                    <input type="submit" value="Submit" id="enviar" class="form-onfocus">
                 </form>
             </div>
 

@@ -14,8 +14,8 @@ body{
 .main{
     background: rgba(38, 38, 182, 0.6)
 }
-#content{
-    max-width: 720px;
+
+.container{
     margin: auto;
     box-sizing: border-box;
 }
@@ -32,6 +32,7 @@ header h1{
 header p{
     margin: auto;
     text-align: center;
+    padding: 0 2em;
 }
 
 #principal{
@@ -128,3 +129,22 @@ footer{
 footer a{
     color: #f1f1f1;
 }
+
+.form-onfocus:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  /*Responsividade*/
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
